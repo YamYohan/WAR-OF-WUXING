@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAR OF WUXING</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="X-hand">
+            <div class="card-container" id="X-container"></div>
+        </div>
+        <div class="X-board" id="Xboard"></div>
+        <div class="Y-hand">
+            <div class="card-container" id="Y-container"></div>
+        </div>
+        <div class="Y-board" id="Yboard"></div>
+
+        <div class="chat-box">
+            <div class="chat-header">
+                <div id="chat-header">Your opponent</div>
+            </div>
+            <div class="chat-output" id="chat-output"></div>
+            <input type="text" placeholder="... type here to chat ..." id="message">
+        </div>
+
+        <div class="button">
+            <div id="turn">TURN 01</div>
+            <button id="ok">OK</button>
+            <button id="back" style="visibility: hidden">BACK</button>
+        </div>
+    </div>
+
+    <div class="wrapper2" style="visibility: hidden" id="wrapper2"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
